@@ -4,7 +4,14 @@ block content
 	h1 Wheater API con nodejs
 	h3 Tiempo en #{title}
 	p Consultar cómo esta el tiempo en...
-	input(placeholder="Ingresar ciudad")#ciudad
-	button(type="text")#consultar Consultar
-	div
-	
+	form#cityquery
+		input(placeholder="Ingresar ciudad")#city
+		br
+		label F°
+		input(type="radio" name="unit" value="fahrenheit")
+		label C°
+		input(type="radio" name="unit" value="celsius" checked)
+		button(type="submit") Consultar
+	div#div1
+	div#cityData
+	img(src="")#weatherImg
